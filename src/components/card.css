@@ -1,0 +1,41 @@
+.card{
+    position: relative;
+}
+
+.card img{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+
+.card:hover img{
+    border: 1px solid rgb(242, 255, 62);
+}
+
+.card .card__recto__image{
+    transform: rotateY(90deg);
+    transition : all ease-in 0.3s;
+    position: absolute;
+}
+
+.card__discovered .card__recto__image{
+    transform: rotateY(0deg);
+    transition-delay: .3s;
+
+}
+
+.card .card__vesro__image{
+    transition : all ease-in 0.2s;
+    transition-delay: .2s;
+}
+.card__discovered .card__vesro__image{
+    transform: rotateY(90deg);
+    transition-delay: .2s;
+
+}
